@@ -22,9 +22,17 @@ alternativas: [`Alternativa 1`, `Alternativa 2`],
 enunciado: `Pergunta 2`,
 alternativas: [`Alternativa 1` `Alternativa 2`],
 },
+{
+enunciado: 'Pergunta 3',
+alternativas: ['Alternativa 1', 'Alternativa 2'],
+},
 ];
 let atual = 0;
 let perguntaAtual;
+function mostraPergunta() {
+perguntaAtual = perguntas[atual];
+}
+
 function mostraPergunta() {
 perguntaAtual = perguntas[atual];
 caixaPerguntas.textContent = perguntaAtual.enunciado;
