@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você decide o futuro da IA - Quiz</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <div class="caixa-principal">
+    <main class="caixa-principal">
         <h1>Você decide o futuro da IA</h1>
-        <div class="caixa-perguntas"></div>
+        
+        <!-- Contêineres que o script.js vai preencher -->
+        <div class="caixa-perguntas" aria-live="polite"></div>
         <div class="caixa-alternativas"></div>
-        <div class="caixa-resultado">
+        
+        <!-- Oculto por padrão via CSS para aparecer só no final -->
+        <div class="caixa-resultado" style="display: none;">
             <p class="texto-resultado"></p>
         </div>
-    </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
+
